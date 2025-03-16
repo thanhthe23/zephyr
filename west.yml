@@ -23,6 +23,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: babblesim
       url-base: https://github.com/BabbleSim
+    - name: thanhthe23
+      url-base: https://github.com/thanhthe23
 
   group-filter: [-babblesim, -optional]
 
@@ -363,6 +365,12 @@ manifest:
     - name: zcbor
       revision: 9b07780aca6fb21f82a241ba386ad9b379809337
       path: modules/lib/zcbor
+    - name: hal_ll_renesas
+      remote: thanhthe23
+      revision: 2063869cf34272305c0d58e76dac649099f0a280
+      path: modules/hal/hal_ll_renesas
+      groups:
+        - hal
   # zephyr-keep-sorted-stop
 
   self:
